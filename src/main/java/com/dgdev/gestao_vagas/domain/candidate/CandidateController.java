@@ -1,6 +1,7 @@
 package com.dgdev.gestao_vagas.domain.candidate;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,9 +13,12 @@ import jakarta.validation.Valid;
 @RequestMapping("/candidate")
 public class CandidateController {
 
-    @PostMapping("/")
-    public String create(@Valid @RequestBody CandidateEntity candidate) {
+    @Autowired
+    private CandidateRepository candidateRepo;
 
-       return "Candidado: " + candidate.getName() + ".";
+    @PostMapping("/")
+    public CandidateEntity create(@Valid @RequestBody CandidateEntity candidate) {
+
+        return this.candidateRepo.save(candidate);
     }
 }
