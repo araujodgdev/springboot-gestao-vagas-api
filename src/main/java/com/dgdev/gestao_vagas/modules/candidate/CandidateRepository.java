@@ -1,4 +1,4 @@
-package com.dgdev.gestao_vagas.domain.candidate;
+package com.dgdev.gestao_vagas.modules.candidate;
 
 import java.util.Optional;
 import java.util.UUID;

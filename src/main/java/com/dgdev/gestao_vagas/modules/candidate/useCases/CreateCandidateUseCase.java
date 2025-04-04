@@ -1,11 +1,11 @@
-package com.dgdev.gestao_vagas.domain.candidate.useCases;
+package com.dgdev.gestao_vagas.modules.candidate.useCases;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dgdev.gestao_vagas.domain.candidate.CandidateEntity;
-import com.dgdev.gestao_vagas.domain.candidate.CandidateRepository;
 import com.dgdev.gestao_vagas.exceptions.UserFoundException;
+import com.dgdev.gestao_vagas.modules.candidate.CandidateEntity;
+import com.dgdev.gestao_vagas.modules.candidate.CandidateRepository;
 
 
 @Service

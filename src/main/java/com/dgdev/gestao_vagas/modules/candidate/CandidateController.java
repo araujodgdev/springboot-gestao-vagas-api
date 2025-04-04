@@ -1,4 +1,4 @@
-package com.dgdev.gestao_vagas.domain.candidate;
+package com.dgdev.gestao_vagas.modules.candidate;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
-import com.dgdev.gestao_vagas.domain.candidate.useCases.CreateCandidateUseCase;
-
+import com.dgdev.gestao_vagas.modules.candidate.useCases.CreateCandidateUseCase;
 
 import jakarta.validation.Valid;
 
